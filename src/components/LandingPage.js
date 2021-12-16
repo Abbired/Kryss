@@ -65,7 +65,7 @@ const landingPage = () => {
         </div>
       </div>
       {/*  */}
-      <div className="bg-black h-screen flex flex-col justify-center items-center">
+      <div className="bg-black  flex flex-col justify-center items-center h-min sm:h-min lg:h-screen">
         <div className=" text-white  ">
           <img
             className="  scale-100 mb-10"
@@ -93,7 +93,7 @@ const landingPage = () => {
         </h1>
       </div>
       {/*  */}
-      <div className="container mx-auto bg-black place-content-around h-screen flex justify-center items-center flex-col lg:flex-row sm:flex-col">
+      <div className="container mx-auto bg-black place-content-around h-screen flex justify-center items-center flex-col lg:flex-row sm:flex-col ">
         <div
           className="flex flex-col "
           data-aos="fade-up"
@@ -139,7 +139,7 @@ const landingPage = () => {
         </div>
       </div>
       <div
-        className="bg-black flex justify-center h-screen items-center"
+        className="bg-black flex justify-center h-screen items-center "
         style={{ color: "#515A5A" }}
       >
         <h1

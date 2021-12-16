@@ -7,8 +7,13 @@ const Navbar = ({ toggle }) => {
       className="flex justify-between items-center h-16 bg-black text-white relative shadow-sm font-mono"
       role="navigation"
     >
-      <Link to="#" className="pl-8 font-bold text-xl">
+      <Link
+        to="#"
+        className="pl-12 pt-10 font-bold text-4xl text-center"
+        style={{ fontFamily: "Corinthia" }}
+      >
         KRYSS
+        <br /> Motorcycles
       </Link>
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
@@ -28,7 +33,7 @@ const Navbar = ({ toggle }) => {
       </div>
       <div className="pr-8 md:block hidden font-bold text-xl">
         <Link className="p-4" to="#">
-          About
+          World of Kryss
         </Link>
         <Link className="p-4" to="#">
           Models

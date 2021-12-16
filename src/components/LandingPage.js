@@ -9,7 +9,7 @@ const landingPage = () => {
     <div>
       <div
         className="bg-no-repeat bg-cover h-screen flex flex-col justify-center items-center text-center "
-        style={{ backgroundImage: `url(${test1})`, color: "#515A5A" }}
+        style={{ backgroundImage: `url(${test1})`, color: "#BCC6CC" }}
       >
         <div data-aos="fade-up" data-aos-duration="3000">
           <h1 className="lg:text-6xl md:text-4xl sm:text-3xl text-1xl font-bold mb-8 ">

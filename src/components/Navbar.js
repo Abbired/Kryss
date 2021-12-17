@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Menu from "./helpers/Menu";
 const Navbar = ({ toggle }) => {
   return (
     <nav
@@ -32,18 +32,11 @@ const Navbar = ({ toggle }) => {
         </svg>
       </div>
       <div className="pr-8 md:block hidden font-bold text-xl">
-        <Link className="p-4" to="#">
-          World of Kryss
-        </Link>
-        <Link className="p-4" to="#">
-          Models
-        </Link>
-        <Link className="p-4" to="#">
-          Technology
-        </Link>
-        <Link className="p-4" to="#">
-          Contact
-        </Link>
+        {Menu.map((id) => (
+          <Link to={id.link} className="p-4">
+            {id.name}
+          </Link>
+        ))}
       </div>
     </nav>
   );

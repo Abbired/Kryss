@@ -1,28 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Menu from "./helpers/Menu";
 const dropdown = ({ isOpen, toggle }) => {
   return (
     <div
       className={
         isOpen
-          ? "grid grid-rows-4 text-center items-center bg-black text-white font-bold"
+          ? "grid grid-rows-4 text-center items-center pt-5 bg-black text-white font-bold"
           : "hidden"
       }
       onClick={toggle}
     >
-      <Link className="p-4" to="#">
-        About
-      </Link>
-      <Link className="p-4" to="#">
-        Models
-      </Link>
-      <Link className="p-4" to="#">
-        Technology
-      </Link>
-      <Link className="p-4" to="#">
-        Contact
-      </Link>
+      {Menu.map((id) => (
+        <Link to={id.link} className="p-4">
+          {id.name}
+        </Link>
+      ))}
     </div>
   );
 };
